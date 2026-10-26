@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "name": "prompt-regression-lab",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "ai",
+    "storage"
+  ]
+}

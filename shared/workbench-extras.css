@@ -1,0 +1,31 @@
+/* Additional layout rules for the JSON/YAML workbench module. */
+.workbench { padding: 22px; }
+.workbench .wb-head { align-items: flex-start; margin-bottom: 16px; }
+.workbench .wb-head h2 { margin: 0; font-size: 21px; }
+.workbench .wb-controls { justify-content: flex-start; gap: 9px; margin-bottom: 12px; }
+.workbench .wb-label { display: grid; gap: 6px; width: 145px; margin: 0; font-size: 12px; }
+.workbench .wb-controls select { padding: 9px 10px; }
+.workbench .wb-check { display: flex; align-items: center; gap: 8px; align-self: flex-end; margin: 0 5px 8px 0; white-space: nowrap; }
+.workbench .wb-file { display: inline-flex; align-items: center; justify-content: center; margin: 0; padding: 10px 15px; border: 1px solid var(--line); border-radius: 9px; background: #252d3b; color: inherit; font-size: 14px; cursor: pointer; }
+.workbench .wb-file:hover { background: #364158; }
+.workbench .wb-status { min-height: 24px; margin-bottom: 12px; }
+.workbench .wb-error { color: var(--danger); }
+.workbench .wb-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.workbench .wb-pane { min-width: 0; }
+.workbench .wb-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; font-size: 14px; font-weight: 650; color: #dce3ef; }
+.workbench .wb-title .muted { font-size: 12px; font-weight: 400; }
+.workbench #source { min-height: 440px; height: min(62vh, 760px); resize: vertical; font: 13px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; tab-size: 2; white-space: pre; overflow: auto; }
+.workbench .wb-tree { height: min(62vh, 760px); min-height: 440px; padding: 14px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; background: #11161f; }
+.workbench .wb-tree.empty { display: grid; place-items: center; }
+.workbench .wb-node { margin: 2px 0; padding-left: 0; }
+.workbench .wb-node > summary { display: flex; align-items: baseline; gap: 10px; padding: 5px 7px; border-radius: 5px; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.workbench .wb-node > summary:hover { background: #202735; }
+.workbench .wb-children { margin-left: 10px; padding-left: 12px; border-left: 1px solid #303747; }
+.workbench .wb-key { color: #c4d5ff; overflow-wrap: anywhere; }
+.workbench .wb-value { color: #c2e6a0; overflow-wrap: anywhere; }
+.workbench .wb-type { color: #8e9bb1; font-size: 11px; }
+.workbench .wb-match-count { margin: 0 0 8px; font-size: 12px; }
+@media (max-width: 850px) {
+  .workbench .wb-grid { grid-template-columns: minmax(0, 1fr); }
+  .workbench #source, .workbench .wb-tree { min-height: 300px; height: 45vh; }
+}

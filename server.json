@@ -1,0 +1,36 @@
+{
+  "apps": [
+    {
+      "path": "ai-memory-curator"
+    },
+    {
+      "path": "cron-time-machine",
+      "taskAuthoring": true,
+      "taskNetwork": []
+    },
+    {
+      "path": "github-pulse",
+      "taskAuthoring": true,
+      "taskNetwork": [
+        "api.github.com:443"
+      ]
+    },
+    {
+      "path": "json-yaml-workbench"
+    },
+    {
+      "path": "local-uptime-sentry",
+      "taskAuthoring": true,
+      "taskNetwork": []
+    },
+    {
+      "path": "prompt-regression-lab"
+    },
+    {
+      "path": "scientific-lab-notebook"
+    },
+    {
+      "path": "system-vitals"
+    }
+  ]
+}

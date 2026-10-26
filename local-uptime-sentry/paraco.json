@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "name": "local-uptime-sentry",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "tasks"
+  ]
+}

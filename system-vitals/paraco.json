@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "name": "system-vitals",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "system"
+  ]
+}

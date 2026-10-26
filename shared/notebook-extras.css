@@ -1,0 +1,85 @@
+/* Shared responsive layout refinements for the three local productivity apps. */
+.notebook-layout,
+.curator-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(0, 2fr);
+  gap: 1rem;
+  align-items: start;
+}
+.notebook-sidebar,
+.curator-list {
+  min-width: 320px;
+  max-width: 100%;
+}
+.notebook-editor,
+.curator-editor {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.notebook-fields-grid,
+.curator-fields {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.notebook-control,
+.curator-control,
+.sentry-field {
+  min-width: 0;
+}
+.notebook-control input,
+.notebook-control select,
+.notebook-control textarea,
+.curator-control input,
+.curator-control select,
+.curator-control textarea,
+.sentry-field input,
+.sentry-field select {
+  max-width: 100%;
+}
+.sentry-dashboard,
+.sentry-service-grid,
+.sentry-service,
+.sentry-history,
+.sentry-notifications {
+  min-width: 0;
+}
+.sentry-service-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+.sentry-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 760px) {
+  .notebook-layout,
+  .curator-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .notebook-sidebar,
+  .curator-list {
+    min-width: 0;
+  }
+  .notebook-entry-list,
+  .curator-memory-list {
+    max-height: 34vh;
+  }
+}
+@media (max-width: 520px) {
+  .notebook-fields-grid,
+  .curator-fields,
+  .sentry-create-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .notebook-span-2,
+  .curator-wide,
+  .sentry-span-2 {
+    grid-column: auto;
+  }
+  .notebook-list-toolbar,
+  .curator-list-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sentry-table {
+    min-width: 560px;
+  }
+}

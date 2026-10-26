@@ -1,0 +1,9 @@
+{
+  "name": "paraco-plugins",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "check": "node tests/compile.cjs && node --test tests/contracts.cjs",
+    "test:runtime": "node tests/runtime.cjs"
+  }
+}

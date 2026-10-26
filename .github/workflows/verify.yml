@@ -1,0 +1,24 @@
+name: Verify plugins
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: paraco-plugins
+      - uses: actions/checkout@v4
+        with:
+          repository: dioko-ai/paraco
+          path: paraco
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+        working-directory: paraco
+      - run: npm run check
+        working-directory: paraco-plugins
+      - run: python3 scripts/package.py --version 0.1.0 --output dist
+        working-directory: paraco-plugins

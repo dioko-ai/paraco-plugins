@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "name": "scientific-lab-notebook",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "storage"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "name": "github-pulse",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "tasks"
+  ]
+}

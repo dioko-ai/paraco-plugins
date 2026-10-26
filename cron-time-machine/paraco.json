@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "name": "cron-time-machine",
+  "entrypoint": "main.ts",
+  "targets": [
+    "local"
+  ],
+  "capabilities": [
+    "tasks",
+    "storage"
+  ]
+}

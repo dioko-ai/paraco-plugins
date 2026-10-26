@@ -1,0 +1,6 @@
+.compiled/
+node_modules/
+dist/
+screenshots/
+paraco-hello-world/
+__pycache__/
